@@ -1,0 +1,77 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 207, 255, 0.1);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-img {
+  height: 42px;
+  width: 42px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.navbar-brand-name {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #00cfff;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #00cfff;
+}
+
+.nav-contact {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.nav-phone,
+.nav-email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
