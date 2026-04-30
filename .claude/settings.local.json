@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "WebFetch(domain:sravya222.github.io)",
+      "Bash(gh --version)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Admin\\OneDrive\\Documents\\fabtronix\\dist"
+    ]
+  }
+}

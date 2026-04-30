@@ -1,0 +1,84 @@
+.how-it-works {
+  background: #0d0d0d;
+  padding: 80px 40px;
+}
+
+.hiw-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hiw-subtitle {
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto 56px;
+  line-height: 1.7;
+}
+
+.hiw-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .hiw-steps {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .hiw-connector { display: none; }
+}
+
+.hiw-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.hiw-step-num {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0,207,255,0.1);
+  border: 2px solid #00cfff;
+  color: #00cfff;
+  font-size: 1.1rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Horizontal connector line between steps */
+.hiw-connector {
+  position: absolute;
+  top: 29px;
+  left: calc(50% + 30px);
+  width: calc(100% - 60px);
+  height: 2px;
+  background: rgba(0,207,255,0.25);
+  z-index: 0;
+}
+
+.hiw-step-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+.hiw-step-desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  margin: 0;
+}
