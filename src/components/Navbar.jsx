@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="navbar-brand">
-        <img src={logo} alt="Fabtronix" className="navbar-logo-img" />
+        <img src={logo + '?v=2'} alt="Fabtronix" className="navbar-logo-img" />
         <span className="navbar-brand-name">FABTRONIX</span>
       </div>
 

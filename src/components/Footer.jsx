@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src={logo} alt="Fabtronix" className="footer-logo-img" />
+            <img src={logo + '?v=2'} alt="Fabtronix" className="footer-logo-img" />
             <span className="footer-logo-name">FABTRONIX</span>
           </div>
           <p className="footer-tagline">
